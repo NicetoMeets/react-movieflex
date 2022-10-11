@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d865e618.css",
-    "main.js": "/static/js/main.a013760a.js",
-    "static/js/787.6570e1c0.chunk.js": "/static/js/787.6570e1c0.chunk.js",
-    "index.html": "/index.html",
-    "main.d865e618.css.map": "/static/css/main.d865e618.css.map",
-    "main.a013760a.js.map": "/static/js/main.a013760a.js.map",
-    "787.6570e1c0.chunk.js.map": "/static/js/787.6570e1c0.chunk.js.map"
+    "main.css": "/react-movieflex/static/css/main.d865e618.css",
+    "main.js": "/react-movieflex/static/js/main.c18cd210.js",
+    "static/js/787.6570e1c0.chunk.js": "/react-movieflex/static/js/787.6570e1c0.chunk.js",
+    "index.html": "/react-movieflex/index.html",
+    "main.d865e618.css.map": "/react-movieflex/static/css/main.d865e618.css.map",
+    "main.c18cd210.js.map": "/react-movieflex/static/js/main.c18cd210.js.map",
+    "787.6570e1c0.chunk.js.map": "/react-movieflex/static/js/787.6570e1c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d865e618.css",
-    "static/js/main.a013760a.js"
+    "static/js/main.c18cd210.js"
   ]
 }
