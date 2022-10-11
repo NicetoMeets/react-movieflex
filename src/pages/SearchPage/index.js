@@ -7,14 +7,16 @@ import "./SearchPage.css";
 export default function SearchPage() {
   const navigate = useNavigate();
   const [searchResults, setSearchResults] = useState([]);
+  
   const useQuery = () => {
-    return new URLSearchParams(useLocation().search);  //useLocation으로 가져온 data의 search
+    console.log("useLocation()", useLocation());
+    return new URLSearchParams(useLocation().search);  //useLocation으로 가져온 현재 페이지정보의 search
   };
 
   let query = useQuery();
   const searchTerm = query.get("q");  //useLocation의 search의 q 부분
 
-  const debouncedSearchTerm = useDebounce(searchTerm, 500);   //useDebounce를 이용해 요청을 줄임 성능향상
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);   //useDebounce를 이용해 요청을 줄여서 성능향상
 
   useEffect(() => {
     if (debouncedSearchTerm) {
@@ -28,7 +30,7 @@ export default function SearchPage() {
       const request = await axios.get(
         `/search/multi?include_adult=false&query=${searchTerm}`  //영화에 대한 상세 정보를 받아옴
       );
-      console.log(request);
+      console.log("request", request);
       setSearchResults(request.data.results);
     } catch (error) {
       console.log("error", error);
