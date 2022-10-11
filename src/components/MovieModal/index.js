@@ -13,7 +13,7 @@ function MovieModal({
     setModalOpen,
 }) {
     const ref = useRef();
-    useOnClickOutside(ref, () => {setModalOpen(false)})
+    useOnClickOutside(ref, () => {setModalOpen(false)});    // ref={ref}로 특정 DOM 지정
     
     return (
         <div className="presentation">
