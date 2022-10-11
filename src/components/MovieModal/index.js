@@ -1,4 +1,5 @@
 import React, { useRef, useCallback } from "react";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 import "./MovieModal.css";
 
 function MovieModal({
@@ -11,6 +12,8 @@ function MovieModal({
     vote_average,
     setModalOpen,
 }) {
+    const ref = useRef();
+    useOnClickOutside(ref, () => {setModalOpen(false)})
     
     return (
         <div className="presentation">
