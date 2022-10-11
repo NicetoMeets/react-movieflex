@@ -13,7 +13,7 @@ export default function Banner() {
     }, []);
 
     const fetchData = async () => {
-        // 현재 상영중인 영화 정보를 가져오기(여러 영화)
+        // 현재 상영중인 영화들 정보를 가져오기
         const request = await axios.get(requests.fetchNowPlaying);
 
         // 여러 영화 중 영화 하나의 ID를 가져오기
