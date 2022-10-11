@@ -18,7 +18,7 @@ function MovieModal({
     return (
         <div className="presentation">
             <div className="wrapper-modal">
-                <div className="modal" >
+                <div className="modal" ref={ref}>
                     <span onClick={() => setModalOpen(false)} className="modal-close">
                         X
                     </span>
