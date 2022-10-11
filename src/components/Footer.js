@@ -98,7 +98,7 @@ const FooterDescContainer = styled.div`
     `;
 
 const FooterDescRights = styled.h2`
-    color: white;
+    color: gray;
     font-size: 14px;
     text-align: center;
     `;
