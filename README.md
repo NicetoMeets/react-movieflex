@@ -29,10 +29,10 @@ https://user-images.githubusercontent.com/108124042/208453262-c46aa6df-24d8-4c03
 - The Movie DB API 요청을 위한 Axios 인스턴스 생성 및 요청
 - Styled Component를 이용하여 Css처리
 - useState,useEffect 등 리액트 훅사용
-- React Router Dom 의 
+- React Router Dom 의
 중첩 라우팅(Nested Routes), useNavigate, useParams, useLocation, useRoutes
 - React Custom Hooks
-- swiper
+- swiper 모듈
 
 
 
